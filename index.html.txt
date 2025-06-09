@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌎 Time Zone Master</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏰</text></svg>">
+</head>
+<body>
+<div class="container">
+<header>
+<h1>🌎 Time Zone Master</h1>
+<p>Convert times effortlessly across the globe!</p>
+</header>
+
+<section class="input-card">
+<h2>📍 Your Location & Time</h2>
+<div class="form-group">
+<label for="sourceTimeZone">Select Time Zone:</label>
+<select id="sourceTimeZone" aria-label="Select your source time zone"></select>
+</div>
+<div class="form-group">
+<label for="sourceDateTime">Date & Time:</label>
+<input type="datetime-local" id="sourceDateTime" aria-label="Enter the date and time in your selected time zone">
+</div>
+</section>
+
+<section class="destination-card">
+<h2>✈️ Destination Times</h2>
+<div id="destinationTimeZones">
+</div>
+<button id="addDestinationBtn" class="button-primary">➕ Add Another Destination</button>
+</section>
+
+<section class="action-section">
+<button id="convertButton" class="button-primary">🔄 Convert Times</button>
+<button id="resetButton" class="button-secondary">🧹 Reset All</button>
+</section>
+
+<footer>
+<p>&copy; <span id="currentYear"></span> Time Zone Master. Built with ❤️ for global teams.</p>
+</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
